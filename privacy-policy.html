@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitarc — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a2e;
+      --muted: #555;
+      --border: #e0e0e0;
+      --accent: #4a90d9;
+      --card-bg: #f7f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f1a;
+        --text: #e8e8f0;
+        --muted: #a0a0b0;
+        --border: #2a2a3e;
+        --accent: #6ab0ff;
+        --card-bg: #1a1a2e;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1.25rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .effective-date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p,
+    li {
+      font-size: 0.95rem;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p class="effective-date">Effective date: March 2, 2026</p>
+
+  <p>
+    Vitarc ("we", "our", or "the app") is an AI-powered nutrition, fitness, and health tracking application.
+    This Privacy Policy explains what information we collect, how it is used, and your rights regarding that
+    information.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+
+  <div class="card">
+    <strong>Account Information</strong>
+    <ul>
+      <li>Email address and/or Google profile (name, email, avatar) when you sign in</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Health &amp; Body Data</strong>
+    <ul>
+      <li>Body weight, body measurements, and body-fat percentage</li>
+      <li>Steps and active calories burned (synced from Apple Health or Google Health Connect)</li>
+      <li>Intermittent fasting windows</li>
+      <li>Water intake logs</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Nutrition Data</strong>
+    <ul>
+      <li>Meal logs (food items, calories, macronutrients)</li>
+      <li>Meal plans and grocery lists</li>
+      <li>Barcode scan results from the Open Food Facts database</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Photos &amp; Media</strong>
+    <ul>
+      <li>Progress photos (front, side, back) stored locally on your device</li>
+      <li>Meal photos submitted for AI-powered food recognition</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Device &amp; Usage Information</strong>
+    <ul>
+      <li>Device type, operating system, and app version</li>
+      <li>Crash logs and general usage analytics (collected by Expo)</li>
+    </ul>
+  </div>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>Calculate your daily calorie and macronutrient targets</li>
+    <li>Generate personalized meal plans and grocery lists</li>
+    <li>Provide AI-powered food recognition from photos and text</li>
+    <li>Sync health data between the app and Apple Health / Google Health Connect</li>
+    <li>Display your weight and body-composition trends over time</li>
+    <li>Authenticate your account and sync data across devices</li>
+  </ul>
+
+  <h2>3. Third-Party Services</h2>
+  <p>Vitarc relies on the following third-party services to function. Each has its own privacy policy:</p>
+
+  <div class="card">
+    <strong>Google Gemini AI</strong>
+    <p>Meal photos and text descriptions are sent to the Gemini API for food recognition and nutritional analysis. <a
+        href="https://ai.google.dev/gemini-api/terms" target="_blank">Gemini API Terms</a></p>
+  </div>
+
+  <div class="card">
+    <strong>Supabase</strong>
+    <p>Authentication, user profiles, and cloud-synced data are stored in a Supabase-hosted PostgreSQL database. <a
+        href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></p>
+  </div>
+
+  <div class="card">
+    <strong>Apple HealthKit (iOS)</strong>
+    <p>With your permission, the app reads steps, active calories, and weight from Apple Health, and may write weight
+      and nutrition data back. Apple HealthKit data is never sent to our servers or any third party. <a
+        href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></p>
+  </div>
+
+  <div class="card">
+    <strong>Google Health Connect (Android)</strong>
+    <p>With your permission, the app reads steps, active calories, and weight from Health Connect. Health Connect data
+      is processed locally on your device. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy
+        Policy</a></p>
+  </div>
+
+  <div class="card">
+    <strong>Open Food Facts</strong>
+    <p>Barcode scans query the Open Food Facts public API to retrieve product nutritional data. No personal data is
+      sent. <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts Privacy Policy</a></p>
+  </div>
+
+  <h2>4. Data Storage &amp; Retention</h2>
+  <ul>
+    <li><strong>Local data:</strong> Meal logs, progress photos, and preferences are stored in an on-device SQLite
+      database and local file storage. This data remains on your device unless you opt in to cloud sync.</li>
+    <li><strong>Cloud data:</strong> If you sign in, your profile and synced data are stored in Supabase for as long as
+      your account is active.</li>
+    <li><strong>AI processing:</strong> Meal photos sent for AI recognition are processed in real time and are not
+      stored by us after the response is returned.</li>
+  </ul>
+
+  <h2>5. Your Rights &amp; Data Deletion</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> — request a copy of all data associated with your account.</li>
+    <li><strong>Delete</strong> — request complete deletion of your account and all cloud-stored data.</li>
+    <li><strong>Revoke permissions</strong> — withdraw HealthKit or Health Connect access at any time through your
+      device's system settings.</li>
+    <li><strong>Delete local data</strong> — uninstalling the app removes all locally-stored data, including photos,
+      meal logs, and settings.</li>
+  </ul>
+  <p>
+    To request data access or deletion, contact us at
+    <a href="mailto:srikark283@gmail.com">srikark283@gmail.com</a>.
+    We will process your request within 30 days.
+  </p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>
+    Vitarc is not intended for use by anyone under the age of 13.
+    We do not knowingly collect personal information from children.
+    If you believe a child has provided us with personal data, please contact us and we will delete it promptly.
+  </p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. Any changes will be reflected by an updated "Effective date" at
+    the top of this page.
+    Continued use of the app after changes constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>8. Contact Us</h2>
+  <p>
+    If you have questions or concerns about this Privacy Policy, please contact us at
+    <a href="mailto:srikark283@gmail.com">srikark283@gmail.com</a>.
+  </p>
+
+  <footer>
+    &copy; 2026 Vitarc. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
