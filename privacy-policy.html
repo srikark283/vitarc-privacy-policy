@@ -43,7 +43,7 @@
     }
 
     h1 {
-      font-size: 1.75rem;
+      font-size: 2rem;
       margin-bottom: 0.25rem;
     }
 
@@ -54,33 +54,37 @@
     }
 
     h2 {
-      font-size: 1.2rem;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
       padding-bottom: 0.35rem;
       border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
     }
 
     p,
     li {
       font-size: 0.95rem;
-    }
-
-    p {
       margin-bottom: 0.75rem;
     }
 
     ul {
-      margin: 0.5rem 0 1rem 1.5rem;
+      margin: 0.5rem 0 1.5rem 1.5rem;
     }
 
     li {
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.5rem;
     }
 
     a {
       color: var(--accent);
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
@@ -90,14 +94,22 @@
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      margin: 0.75rem 0;
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .important-note {
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      font-style: italic;
+      color: var(--muted);
+      margin: 1.5rem 0;
     }
 
     footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
       border-top: 1px solid var(--border);
       color: var(--muted);
       font-size: 0.85rem;
@@ -109,151 +121,126 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="effective-date">Effective date: March 2, 2026</p>
+  <p class="effective-date">Last Updated: March 2, 2026</p>
 
   <p>
-    Vitarc ("we", "our", or "the app") is an AI-powered nutrition, fitness, and health tracking application.
-    This Privacy Policy explains what information we collect, how it is used, and your rights regarding that
-    information.
+    Vitarc ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy describes how we
+    collect, use, and share information when you use our mobile application and services.
+  </p>
+
+  <p class="important-note">
+    By using Vitarc, you agree to the collection and use of information in accordance with this policy. We do not sell
+    your personal data to third parties.
   </p>
 
   <h2>1. Information We Collect</h2>
+  <p>We collect information that you provide directly to us, as well as data generated through your use of the App.</p>
 
   <div class="card">
-    <strong>Account Information</strong>
+    <strong>Personal & Account Data</strong>
     <ul>
-      <li>Email address and/or Google profile (name, email, avatar) when you sign in</li>
+      <li><strong>Identity Data:</strong> Name and email address provided via Google Sign-In or manual registration.
+      </li>
+      <li><strong>Profile Data:</strong> Age, gender, height, and activity levels used to calculate metabolic rates.
+      </li>
     </ul>
   </div>
 
   <div class="card">
-    <strong>Health &amp; Body Data</strong>
+    <strong>Health & Fitness Data (Sensitive Information)</strong>
     <ul>
-      <li>Body weight, body measurements, and body-fat percentage</li>
-      <li>Steps and active calories burned (synced from Apple Health or Google Health Connect)</li>
-      <li>Intermittent fasting windows</li>
-      <li>Water intake logs</li>
+      <li><strong>Body Metrics:</strong> Weight, body fat percentage, and physical measurements.</li>
+      <li><strong>Activity Data:</strong> Steps and active energy burned, retrieved from <strong>Apple
+          HealthKit</strong> or <strong>Google Health Connect</strong>.</li>
+      <li><strong>Logging:</strong> Water intake, fasting durations, and exercise logs.</li>
     </ul>
   </div>
 
   <div class="card">
-    <strong>Nutrition Data</strong>
+    <strong>Nutrition & AI Data</strong>
     <ul>
-      <li>Meal logs (food items, calories, macronutrients)</li>
-      <li>Meal plans and grocery lists</li>
-      <li>Barcode scan results from the Open Food Facts database</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Photos &amp; Media</strong>
-    <ul>
-      <li>Progress photos (front, side, back) stored locally on your device</li>
-      <li>Meal photos submitted for AI-powered food recognition</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Device &amp; Usage Information</strong>
-    <ul>
-      <li>Device type, operating system, and app version</li>
-      <li>Crash logs and general usage analytics (collected by Expo)</li>
+      <li><strong>Dietary Logs:</strong> Foods consumed, caloric intake, and macronutrient breakdowns.</li>
+      <li><strong>Visual Data:</strong> Images of meals uploaded for AI-powered recognition.</li>
+      <li><strong>Barcode Data:</strong> Product identifiers used to query nutritional databases.</li>
     </ul>
   </div>
 
   <h2>2. How We Use Your Information</h2>
+  <p>We process your data based on <strong>Contractual Necessity</strong> (to provide the service) and
+    <strong>Legitimate Interests</strong> (to improve the app). Uses include:</p>
   <ul>
-    <li>Calculate your daily calorie and macronutrient targets</li>
-    <li>Generate personalized meal plans and grocery lists</li>
-    <li>Provide AI-powered food recognition from photos and text</li>
-    <li>Sync health data between the app and Apple Health / Google Health Connect</li>
-    <li>Display your weight and body-composition trends over time</li>
-    <li>Authenticate your account and sync data across devices</li>
+    <li>Calculating personalized nutritional targets (TDEE, Macros).</li>
+    <li>Providing AI-driven meal analysis and automated grocery list generation.</li>
+    <li>Synchronizing data across multiple devices via your secure account.</li>
+    <li>Generating progress charts and health trend visualizations.</li>
+    <li>Internal debugging, crash reporting, and performance optimization.</li>
   </ul>
 
-  <h2>3. Third-Party Services</h2>
-  <p>Vitarc relies on the following third-party services to function. Each has its own privacy policy:</p>
+  <h2>3. Third-Party Data Sharing & Services</h2>
+  <p>We only share your data with third-party service providers necessary for App functionality:</p>
 
   <div class="card">
-    <strong>Google Gemini AI</strong>
-    <p>Meal photos and text descriptions are sent to the Gemini API for food recognition and nutritional analysis. <a
-        href="https://ai.google.dev/gemini-api/terms" target="_blank">Gemini API Terms</a></p>
+    <strong>AI Processing (Google Gemini)</strong>
+    <p>Meal photos and text queries are processed via the Google Gemini API. Data sent to the API is used for real-time
+      analysis and is governed by <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google’s Enterprise
+        Privacy terms</a>, which generally ensure data is not used to train global models without consent.</p>
   </div>
 
   <div class="card">
-    <strong>Supabase</strong>
-    <p>Authentication, user profiles, and cloud-synced data are stored in a Supabase-hosted PostgreSQL database. <a
-        href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></p>
+    <strong>Infrastructure (Supabase)</strong>
+    <p>Your profile and encrypted health logs are stored using Supabase (PostgreSQL). Data is encrypted in transit and
+      at rest. <a href="https://supabase.com/privacy" target="_blank">View Privacy Policy</a>.</p>
   </div>
 
   <div class="card">
-    <strong>Apple HealthKit (iOS)</strong>
-    <p>With your permission, the app reads steps, active calories, and weight from Apple Health, and may write weight
-      and nutrition data back. Apple HealthKit data is never sent to our servers or any third party. <a
-        href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></p>
+    <strong>Health Ecosystems (Apple & Google)</strong>
+    <p>Access to <strong>HealthKit</strong> and <strong>Health Connect</strong> is optional. We strictly adhere to the
+      <a href="https://developer.apple.com/app-store/review/guidelines/#health-and-health-research"
+        target="_blank">Apple HealthKit Framework</a> and Google Health Connect policies. Your health data is never used
+      for advertising or marketing purposes.</p>
   </div>
 
-  <div class="card">
-    <strong>Google Health Connect (Android)</strong>
-    <p>With your permission, the app reads steps, active calories, and weight from Health Connect. Health Connect data
-      is processed locally on your device. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy
-        Policy</a></p>
-  </div>
-
-  <div class="card">
-    <strong>Open Food Facts</strong>
-    <p>Barcode scans query the Open Food Facts public API to retrieve product nutritional data. No personal data is
-      sent. <a href="https://world.openfoodfacts.org/privacy" target="_blank">Open Food Facts Privacy Policy</a></p>
-  </div>
-
-  <h2>4. Data Storage &amp; Retention</h2>
+  <h2>4. Data Retention & Deletion</h2>
   <ul>
-    <li><strong>Local data:</strong> Meal logs, progress photos, and preferences are stored in an on-device SQLite
-      database and local file storage. This data remains on your device unless you opt in to cloud sync.</li>
-    <li><strong>Cloud data:</strong> If you sign in, your profile and synced data are stored in Supabase for as long as
-      your account is active.</li>
-    <li><strong>AI processing:</strong> Meal photos sent for AI recognition are processed in real time and are not
-      stored by us after the response is returned.</li>
+    <li><strong>Account Data:</strong> Retained as long as your account is active. You may delete your account within
+      the App settings at any time.</li>
+    <li><strong>Local Storage:</strong> Progress photos and cached meal logs are stored locally. These are erased when
+      the App is uninstalled.</li>
+    <li><strong>Deletion Requests:</strong> Upon account deletion, all personal data stored in our cloud databases
+      (Supabase) is permanently purged within 30 days.</li>
   </ul>
 
-  <h2>5. Your Rights &amp; Data Deletion</h2>
-  <p>You have the right to:</p>
+  <h2>5. Your Privacy Rights (GDPR/CCPA)</h2>
+  <p>Depending on your location, you may have the following rights:</p>
   <ul>
-    <li><strong>Access</strong> — request a copy of all data associated with your account.</li>
-    <li><strong>Delete</strong> — request complete deletion of your account and all cloud-stored data.</li>
-    <li><strong>Revoke permissions</strong> — withdraw HealthKit or Health Connect access at any time through your
-      device's system settings.</li>
-    <li><strong>Delete local data</strong> — uninstalling the app removes all locally-stored data, including photos,
-      meal logs, and settings.</li>
+    <li><strong>Right to Access:</strong> Request a digital export of your personal data.</li>
+    <li><strong>Right to Rectification:</strong> Correct inaccurate health or profile data.</li>
+    <li><strong>Right to Erasure:</strong> Request the "right to be forgotten" and have your data deleted.</li>
+    <li><strong>Right to Withdraw Consent:</strong> Revoke camera or health permissions via system settings at any time.
+    </li>
   </ul>
-  <p>
-    To request data access or deletion, contact us at
-    <a href="mailto:srikark283@gmail.com">srikark283@gmail.com</a>.
-    We will process your request within 30 days.
+
+  <h2>6. Security</h2>
+  <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the
+    internet or electronic storage is 100% secure. We encourage users to use strong passwords and secure their devices.
   </p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>
-    Vitarc is not intended for use by anyone under the age of 13.
-    We do not knowingly collect personal information from children.
-    If you believe a child has provided us with personal data, please contact us and we will delete it promptly.
-  </p>
+  <h2>7. Children's Privacy</h2>
+  <p>Vitarc is not intended for individuals under the age of 13. We do not knowingly collect data from children. If we
+    become aware of such data collection, we will take immediate steps to delete it.</p>
 
-  <h2>7. Changes to This Policy</h2>
+  <h2>8. Contact & Data Controller</h2>
   <p>
-    We may update this Privacy Policy from time to time. Any changes will be reflected by an updated "Effective date" at
-    the top of this page.
-    Continued use of the app after changes constitutes acceptance of the revised policy.
+    For any questions regarding this policy or to exercise your data rights, please contact our Data Protection Lead:
   </p>
-
-  <h2>8. Contact Us</h2>
   <p>
-    If you have questions or concerns about this Privacy Policy, please contact us at
-    <a href="mailto:srikark283@gmail.com">srikark283@gmail.com</a>.
+    <strong>Email:</strong> <a href="mailto:srikark283@gmail.com">srikark283@gmail.com</a><br>
+    <strong>Response Time:</strong> We aim to respond to all inquiries within 72 hours.
   </p>
 
   <footer>
-    &copy; 2026 Vitarc. All rights reserved.
+    &copy; 2026 Vitarc Health. All rights reserved.<br>
+    Designed for privacy. Built for health.
   </footer>
 
 </body>
